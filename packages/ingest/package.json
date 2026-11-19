@@ -1,0 +1,21 @@
+{
+  "name": "@muqtataf/ingest",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "check-feeds": "tsx src/check-feeds.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.1172.0",
+    "@muqtataf/db": "*",
+    "drizzle-orm": "0.44.7",
+    "rss-parser": "3.13.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145"
+  }
+}

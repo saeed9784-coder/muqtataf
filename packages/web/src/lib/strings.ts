@@ -1,0 +1,35 @@
+/** Arabic UI strings. Keep user-facing copy here so it can be reviewed in one place. */
+export const t = {
+  nav: {
+    popular: 'الشائع',
+    latest: 'الأحدث',
+    myFeed: 'خلاصتي',
+    bookmarks: 'المحفوظات',
+    sources: 'المصادر',
+    tags: 'الوسوم',
+  },
+  search: { placeholder: 'ابحث في المقالات…', title: (q: string) => `نتائج البحث عن «${q}»`, tooShort: 'اكتب حرفين على الأقل' },
+  auth: { signIn: 'تسجيل الدخول', signOut: 'تسجيل الخروج', devPrompt: 'اسم مستخدم للتجربة المحلية:', signingIn: 'جارٍ تسجيل الدخول…', required: 'سجّل الدخول للمتابعة' },
+  post: {
+    read: 'اقرأ المقال',
+    upvote: 'تصويت',
+    bookmark: 'حفظ',
+    bookmarked: 'محفوظ',
+    comments: 'التعليقات',
+    readTime: (m: number) => `${m} د قراءة`,
+    notFound: 'لم نعثر على هذا المقال',
+    englishNote: 'المقال الأصلي باللغة الإنجليزية',
+  },
+  comments: { placeholder: 'شارك رأيك…', submit: 'نشر', delete: 'حذف', empty: 'لا تعليقات بعد. كن أول من يعلّق!', confirmDelete: 'حذف هذا التعليق؟' },
+  follow: { follow: 'متابعة', following: 'متابَع' },
+  feed: {
+    empty: 'لا توجد مقالات هنا بعد.',
+    myEmpty: 'خلاصتك فارغة. تابع بعض الوسوم أو المصادر لتظهر مقالاتها هنا.',
+    bookmarksEmpty: 'لم تحفظ أي مقال بعد.',
+    loadMore: 'تحميل المزيد',
+    end: 'وصلت إلى النهاية',
+  },
+  sources: { title: 'المصادر', subtitle: 'المدونات والمواقع التي نجمع منها المقالات' },
+  tags: { title: 'الوسوم الرائجة', subtitle: 'الأكثر استخدامًا خلال آخر 30 يومًا', posts: (n: number) => `مقالات: ${n}` },
+  errors: { generic: 'حدث خطأ ما. حاول مرة أخرى.', retry: 'إعادة المحاولة' },
+} as const;

@@ -1,0 +1,16 @@
+{
+  "name": "@muqtataf/infra",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "synth": "cdk synth --all",
+    "deploy": "cdk deploy --all --require-approval broadening",
+    "diff": "cdk diff",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.215.0",
+    "constructs": "10.4.2"
+  },
+  "devDependencies": { "aws-cdk": "2.1029.0" }
+}

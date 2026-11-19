@@ -1,0 +1,14 @@
+{
+  "app": "npx tsx bin/app.ts",
+  "context": {
+    "region": "us-east-1",
+    "authDomainPrefix": "muqtataf-news",
+    "dbMinAcu": 0,
+    "dbMaxAcu": 2,
+    "ingestEveryMinutes": 30,
+    "waf": true,
+    "wafRateLimitPerIp": 2000,
+    "wafGraphqlRateLimitPerIp": 600,
+    "wafBlockedAlarm": 1000
+  }
+}

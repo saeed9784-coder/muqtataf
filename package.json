@@ -1,0 +1,26 @@
+{
+  "name": "muqtataf",
+  "private": true,
+  "description": "Arabic-first developer news aggregator, serverless on AWS",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev:api": "npm run dev -w @muqtataf/api",
+    "dev:web": "npm run dev -w @muqtataf/web",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "db:generate": "npm run generate -w @muqtataf/db",
+    "build:web": "npm run build -w @muqtataf/web",
+    "synth": "npm run build:web && npm run synth -w @muqtataf/infra",
+    "deploy": "npm run build:web && npm run deploy -w @muqtataf/infra"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@vitest/coverage-v8": "3.2.7",
+    "esbuild": "0.25.12",
+    "tsx": "^4.20.0",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  },
+  "engines": { "node": ">=22" }
+}
